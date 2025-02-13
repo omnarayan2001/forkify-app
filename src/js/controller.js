@@ -133,6 +133,10 @@ const controlAddRecipe = async function (newReceipe) {
   }
 };
 
+const newFeature = function () {
+  console.log(`Welcome to the application! `);
+};
+
 //* IFFE
 (function () {
   bookmarksView.addHanlderRender(controlBookmarks);
@@ -142,7 +146,7 @@ const controlAddRecipe = async function (newReceipe) {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log(`Welcome!`);
+  newFeature();
 })();
 
 // fetch(`https://forkify-api.jonas.io/api/v2/recipes/5ed6604591c37cdc054bc886`)
